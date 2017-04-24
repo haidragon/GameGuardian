@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Initialize Chartboost
+        print("Chartboost")
         Chartboost.start(withAppId: "58fd9eab43150f3b4afd4e5c", appSignature: "78d535a0e37c5641d3a9b8ce4a85be1b1177ded8", delegate: nil)
         Chartboost.cacheInterstitial(CBLocationHomeScreen)
         // Load from UserDefaults
